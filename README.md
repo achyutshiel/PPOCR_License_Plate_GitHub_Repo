@@ -217,6 +217,24 @@ CSV Results and Prediction Comparison
 **Note:** The directory descriptions above reflect the observed project structure and intended pipeline. The exact generation method for every file should only be claimed where it is confirmed by the corresponding notebook or processing code.
 *Dataset files and model weights are not necessarily included in this repository. Follow the dataset preparation instructions before running the notebooks.*
 
+## 📂 Dataset Access
+
+The complete dataset is hosted on Google Drive because the image files exceed the practical size limits for uploading the entire dataset directly to GitHub.
+
+**[📥 Access the Dataset on Google Drive](https://drive.google.com/drive/folders/1ssk2MllfyFtpC9PzH3L9xZz5uc-jItgD?usp=sharing)**
+
+The dataset contains the original vehicle images, license plate crops, and related data-preparation files used in the recognition workflow.
+
+### How to Use the Dataset
+
+1. Open the Google Drive link above.
+2. Download the required dataset folders.
+3. Upload or mount the dataset in Google Colab.
+4. Update the dataset paths in the notebook if required.
+5. Run the notebook cells in the specified order.
+
+**Note:** Access depends on Google Drive sharing permissions. Ensure that the reviewer can access the folder. Avoid including private information or files unrelated to the assignment.
+
 ## 📂 Dataset Preparation
 
 The recognition pipeline requires cropped license plate images and their corresponding text labels.
@@ -283,6 +301,7 @@ DATASET_ROOT = "/content/drive/MyDrive/license_plate_dataset"
 ```
 
 The exact variable names depend on the notebook configuration.
+
 
 ### 4. Install dependencies
 
